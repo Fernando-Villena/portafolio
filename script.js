@@ -23,7 +23,12 @@ const menuBars = document.querySelectorAll('.menu-bar');
 
 menuBtn.addEventListener('click', () => {
   const isOpen = mobileMenu.classList.toggle('open');
-  mobileMenu.classList.toggle('hidden', !isOpen);
+  
+  // Toggle colors and cover
+  navbar.classList.toggle('menu-open', isOpen);
+  
+  // Optional: Prevent body scroll when menu is open
+  document.body.style.overflow = isOpen ? 'hidden' : '';
 
   // Animate hamburger → X
   if (isOpen) {
@@ -41,7 +46,9 @@ menuBtn.addEventListener('click', () => {
 document.querySelectorAll('#mobile-menu .nav-link').forEach(link => {
   link.addEventListener('click', () => {
     mobileMenu.classList.remove('open');
-    mobileMenu.classList.add('hidden');
+    navbar.classList.remove('menu-open');
+    document.body.style.overflow = '';
+    
     menuBars[0].style.transform = '';
     menuBars[1].style.opacity = '';
     menuBars[2].style.transform = '';

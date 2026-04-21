@@ -57,19 +57,19 @@
         <a href="#proyectos" class="nav-link">Proyectos</a>
         <a href="#contacto" class="nav-link">Contacto</a>
       </nav>
-      <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menú">
+      <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2 relative z-50 transition-colors" aria-label="Menú">
         <span class="menu-bar block w-6 h-0.5 bg-current transition-all"></span>
         <span class="menu-bar block w-6 h-0.5 bg-current transition-all"></span>
         <span class="menu-bar block w-6 h-0.5 bg-current transition-all"></span>
       </button>
     </div>
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-white border-t border-gray-100">
-      <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm font-medium">
-        <a href="#sobre-mi" class="nav-link py-1">Sobre mí</a>
-        <a href="#habilidades" class="nav-link py-1">Habilidades</a>
-        <a href="#proyectos" class="nav-link py-1">Proyectos</a>
-        <a href="#contacto" class="nav-link py-1">Contacto</a>
+    <div id="mobile-menu" class="mobile-menu flex md:hidden flex-col bg-white border-t border-gray-100 text-gray-900 justify-center pb-20">
+      <div class="max-w-6xl w-full mx-auto px-6 py-10 flex flex-col items-center text-center gap-8 text-2xl font-medium tracking-tight">
+        <a href="#sobre-mi" class="nav-link py-2 transition-transform hover:scale-105">Sobre mí</a>
+        <a href="#habilidades" class="nav-link py-2 transition-transform hover:scale-105">Habilidades</a>
+        <a href="#proyectos" class="nav-link py-2 transition-transform hover:scale-105">Proyectos</a>
+        <a href="#contacto" class="nav-link py-2 transition-transform hover:scale-105">Contacto</a>
       </div>
     </div>
   </header>
