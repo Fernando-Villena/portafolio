@@ -1,0 +1,28 @@
+<svg viewBox="240 110 200 100" role="img" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    path, circle, ellipse {
+      fill: #111;
+      stroke: #111;
+    }
+    .orbit {
+      fill: none;
+    }
+    @media (prefers-color-scheme: dark) {
+      path, circle {
+        fill: #fff;
+        stroke: #fff;
+      }
+      .orbit {
+        stroke: #fff;
+      }
+    }
+  </style>
+  <!-- Planeta central -->
+  <circle cx="340" cy="160" r="45" style="stroke:none;" />
+  
+  <!-- Anillo orbital -->
+  <ellipse cx="340" cy="160" rx="85" ry="25" class="orbit" style="stroke-width:6px;" />
+  
+  <!-- Pequeño planeta en órbita -->
+  <circle cx="255" cy="160" r="10" style="stroke:none;" />
+</svg>
