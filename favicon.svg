@@ -24,5 +24,11 @@
   <ellipse cx="340" cy="160" rx="85" ry="25" class="orbit" style="stroke-width:6px;" />
   
   <!-- Pequeño planeta en órbita -->
-  <circle cx="255" cy="160" r="10" style="stroke:none;" />
+  <circle cx="0" cy="0" r="10" style="stroke:none;">
+    <animateMotion
+      dur="4s"
+      repeatCount="indefinite"
+      path="M 255,160 a 85,25 0 1,0 170,0 a 85,25 0 1,0 -170,0"
+    />
+  </circle>
 </svg>

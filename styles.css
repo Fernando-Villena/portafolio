@@ -61,6 +61,16 @@ body {
   box-shadow: 0 1px 16px rgba(0,0,0,0.06);
 }
 
+#navbar.scrolled .logo-white {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#navbar.scrolled .logo-black {
+  opacity: 1;
+  visibility: visible;
+}
+
 .logo-text {
   font-size: 1.25rem;
   font-weight: 800;

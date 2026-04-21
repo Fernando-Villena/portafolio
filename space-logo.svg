@@ -1,0 +1,24 @@
+<svg viewBox="240 110 200 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+      .planet { fill: #ffffff; }
+      .ring { fill: none; stroke: #ffffff; stroke-width: 6px; }
+      .orbit-dot { fill: #ffffff; }
+  </style>
+
+  <g>
+    <!-- Planeta central -->
+    <circle class="planet" cx="340" cy="160" r="45"/>
+    
+    <!-- Anillo orbital -->
+    <ellipse class="ring" cx="340" cy="160" rx="85" ry="25"/>
+    
+    <!-- Pequeño planeta en órbita -->
+    <circle class="orbit-dot" cx="0" cy="0" r="10">
+      <animateMotion
+        dur="4s"
+        repeatCount="indefinite"
+        path="M 255,160 a 85,25 0 1,0 170,0 a 85,25 0 1,0 -170,0"
+      />
+    </circle>
+  </g>
+</svg>

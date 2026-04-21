@@ -1,0 +1,18 @@
+<svg viewBox="240 110 200 100" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Planeta central -->
+    <circle cx="340" cy="160" r="45" fill="#111111"/>
+    
+    <!-- Anillo orbital -->
+    <ellipse cx="340" cy="160" rx="85" ry="25" fill="none" stroke="#111111" stroke-width="6"/>
+    
+    <!-- Pequeño planeta en órbita -->
+    <circle cx="0" cy="0" r="10" fill="#111111">
+      <animateMotion
+        dur="4s"
+        repeatCount="indefinite"
+        path="M 255,160 a 85,25 0 1,0 170,0 a 85,25 0 1,0 -170,0"
+      />
+    </circle>
+  </g>
+</svg>
